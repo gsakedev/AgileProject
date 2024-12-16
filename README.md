@@ -3,6 +3,21 @@
 Order Manager API is a robust, scalable solution for managing restaurant orders, delivery staff, and menu items. It features advanced design patterns, clean architecture principles, and modern practices like the **Specification Pattern**, **Domain Events**, and **CQRS (Command Query Responsibility Segregation)**. Built with **.NET 8**, it ensures high performance and maintainability.
 
 ---
+## **Prerequisites**
+
+To run the Order Manager API, ensure the following tools are installed:
+
+1. **Docker Desktop**:  
+   - Download: [Docker Desktop](https://www.docker.com/products/docker-desktop)  
+   - Required to run PostgreSQL, RabbitMQ, and the API in containers.
+
+2. **Visual Studio 2022** (with Docker support)  
+3. **.NET SDK 8.0**  
+4. **PostgreSQL** (included in Docker Compose)  
+5. **RabbitMQ** (included in Docker Compose)  
+
+---
+
 
 ## **Features**
 
