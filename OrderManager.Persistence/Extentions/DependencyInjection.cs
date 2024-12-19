@@ -33,12 +33,12 @@ namespace OrderManager.Persistence.Extentions
             .AddDefaultTokenProviders();
 
             services.AddScoped<IDatabaseInitializer, DatabaseInitializer>();
-            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
-            services.AddScoped<IMenuItemRepository, MenuItemRepository>();
-            services.AddScoped<IOrderRepository, OrderRepository>();
-            services.AddScoped<IRepository<MenuItem>, Repository<MenuItem>>();
-            services.AddScoped<IDeliveryStaffRepository, DeliveryStaffRepository>();
-            services.AddScoped<IAdvancedRepository<Order>, AdvancedRepository<Order>>();
+            services.AddTransient(typeof(IRepository<>), typeof(Repository<>));
+            services.AddTransient<IMenuItemRepository, MenuItemRepository>();
+            services.AddTransient<IOrderRepository, OrderRepository>();
+            services.AddTransient<IRepository<MenuItem>, Repository<MenuItem>>();
+            services.AddTransient<IDeliveryStaffRepository, DeliveryStaffRepository>();
+            services.AddTransient<IAdvancedRepository<Order>, AdvancedRepository<Order>>();
 
             return services;
         }
